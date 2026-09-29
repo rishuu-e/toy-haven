@@ -235,3 +235,11 @@ label { font-size: 0.85rem; font-weight: 600; color: var(--text-dark); display: 
     object-fit: contain;
     border-radius: 4px;
 }
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
