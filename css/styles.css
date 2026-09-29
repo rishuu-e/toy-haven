@@ -247,3 +247,8 @@ label { font-size: 0.85rem; font-weight: 600; color: var(--text-dark); display: 
     color: #555555;
     text-decoration: underline;
 }
+
+.newsletter-bar .nl-text p {
+    color: #1a1a1a;
+    font-weight: 500;
+}
