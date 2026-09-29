@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOY HAVEN - Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E🧸%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">TOY HAVEN</div>
+            <div class="hamburger" id="hamburger">☰</div>
+            <nav class="main-nav" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+                <a href="feedback.html">Support</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-container mt-1">
+            <input type="text" id="search-input" placeholder="Search by product name...">
+            <button class="search-btn">🔍︎</button>
+        </div>
+        
+        <div class="filter-section mt-1">
+            <h3>Filter by Category:</h3>
+            <div class="pill-filters" id="pill-filters">
+                <button class="pill-btn active" data-cat="All">All</button>
+                <button class="pill-btn" data-cat="Figurines">Figurines</button>
+                <button class="pill-btn" data-cat="Toys">Toys</button>
+                <button class="pill-btn" data-cat="Board Games">Board Games</button>
+                <button class="pill-btn" data-cat="Diecast Cars">Diecast Cars</button>
+            </div>
+        </div>
+
+        <section class="products-section mt-2">
+            <div class="grid-4" id="products-grid">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">Links</a> | 
+                <a href="feedback.html">Support</a> | 
+                <a href="#">FAQ</a> | 
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

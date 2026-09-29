@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOY HAVEN - Feedback & Support</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E🧸%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">TOY HAVEN</div>
+            <div class="hamburger" id="hamburger">☰</div>
+            <nav class="main-nav" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+                <a href="feedback.html">Support</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="support-layout mt-1">
+            <div class="feedback-form-container">
+                <h2 class="page-title">Contact Support & Feedback</h2>
+                <form id="feedback-form" class="form-section mt-1">
+                    <label>Name *</label>
+                    <input type="text" id="fb-name" placeholder="Enter your name" required>
+                    
+                    <label>Email *</label>
+                    <input type="email" id="fb-email" placeholder="Enter your email address" required>
+                    
+                    <label>Message *</label>
+                    <textarea id="fb-message" rows="6" placeholder="Type your message here..." required></textarea>
+                    
+                    <button type="submit" class="btn btn-dark w-100 mt-1">SUBMIT FEEDBACK</button>
+                </form>
+                <div id="fb-success" class="success-box mt-1" style="display:none;">Feedback Sent Successfully!</div>
+            </div>
+            
+            <div class="faq-container">
+                <h2 class="page-title">Frequently Asked Questions (FAQ)</h2>
+                <div class="accordion mt-1">
+                    <div class="acc-item">
+                        <button class="acc-btn active">
+                            <span class="acc-icon">○</span> What is the return policy? <span class="acc-arrow">^</span>
+                        </button>
+                        <div class="acc-content" style="max-height: 100px;">
+                            <p>We offer a 30-day return policy on unopened items.</p>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <button class="acc-btn">
+                            <span class="acc-icon">○</span> Do you ship globally? <span class="acc-arrow">v</span>
+                        </button>
+                        <div class="acc-content">
+                            <p>Yes, we ship globally! Shipping rates are calculated at checkout.</p>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <button class="acc-btn">
+                            <span class="acc-icon">○</span> How do I track my order? <span class="acc-arrow">v</span>
+                        </button>
+                        <div class="acc-content">
+                            <p>You will receive a tracking link via email once your order has shipped.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">Links</a> | 
+                <a href="feedback.html">Support</a> | 
+                <a href="#">FAQ</a> | 
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
