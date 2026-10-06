@@ -406,6 +406,10 @@ function initWishlist() {
             let opt3 = "<option value='Not Interested'> Not Interested</option>";
             if(p.wStatus === "Not Interested") opt3 = "<option value='Not Interested' selected> Not Interested</option>";
 
+            let opt4 = "<option value='Future Buy'> Future Buy</option>";
+            if(p.wStatus === "Future Buy") opt3 = "<option value='Future Buy' selected> Future Buy</option>";
+
+
             let cardHtml = "<div class='card fade-in'>";
             cardHtml = cardHtml + "<div class='img-placeholder' style='background:transparent;'>";
             cardHtml = cardHtml + "<img src='" + p.image + "' alt='" + p.name + "' class='product-img'>";
@@ -413,7 +417,7 @@ function initWishlist() {
             cardHtml = cardHtml + "<h4 class='card-title'>" + p.name + "</h4>";
             cardHtml = cardHtml + "<p class='card-price'>$" + p.price.toFixed(2) + "</p>";
             cardHtml = cardHtml + "<select class='wishlist-select " + colorClass + "' onchange='updateWStatus(" + p.id + ", this.value)'>";
-            cardHtml = cardHtml + opt1 + opt2 + opt3;
+            cardHtml = cardHtml + opt1 + opt2 + opt3 + opt4;
             cardHtml = cardHtml + "</select>";
             cardHtml = cardHtml + "<button class='btn-remove mt-1' onclick='removeWishlistItem(" + p.id + ")'>Remove</button>";
             cardHtml = cardHtml + "</div>";
