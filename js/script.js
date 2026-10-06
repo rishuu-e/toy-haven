@@ -85,6 +85,9 @@ window.toggleWishlist = function(id, btnElement) {
         btnElement.innerHTML = '❤ Added to Wishlist';
     }
     setLocal('wishlist', w);
+
+    console.log("Item added to Wishlist!");
+    console.log(JSON.parse(localStorage.getItem('wishlist')));
 }
 
 function createCardHTML(p) {
@@ -204,6 +207,9 @@ window.addToCart = function(id) {
     setLocal('cart', cart);
     updateCartBadge();
     alert('Item added to cart!');
+
+    console.log("Item added to Cart!");
+    console.log(JSON.parse(localStorage.getItem('cart')));
 }
 
 function updateCartBadge() {
